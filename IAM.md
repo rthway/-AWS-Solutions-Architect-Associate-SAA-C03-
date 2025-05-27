@@ -183,3 +183,45 @@ Go to [https://console.aws.amazon.com/](https://console.aws.amazon.com/) and sig
 -   Use **CloudTrail** to log and monitor IAM actions.
     
 
+## Statement element in IAM
+In AWS Identity and Access Management (IAM) policies, the "Statement" element is  the main container for individual statements that define access permissions. It's a JSON array where each element is a statement block, outlining what actions are allowed or denied for a specific entity or resource. The Statement element is crucial for structuring and managing access policies in AWS.
+
+***Key Components within a Statement:***
+
+-   **Effect:** Specifies whether the statement grants access (Allow) or denies it (Deny).
+    
+-   **Principal:** Identifies the AWS entity (user, group, or role) to which the statement applies.
+    
+-   **Action:** Lists the specific AWS API actions that are allowed or denied.
+    
+-   **Resource:** Specifies the AWS resources (e.g., S3 buckets, EC2 instances) that are subject to the statement.
+    
+-   **Condition:** Defines conditional logic that determines when the statement's effect applies, such as based on the user's IP address or the time of day.
+    
+-   **Sid:** An optional identifier for the statement, used for internal tracking within the policy.
+
+***example:*** 
+
+    {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "AllowAccessToS3Bucket",
+          "Effect": "Allow",
+          "Principal": {
+            "AWS": "arn:aws:iam::123456789012:user/john.doe"
+          },
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::my-bucket/*"
+        },
+        {
+          "Sid": "DenyAccessToEC2Instances",
+          "Effect": "Deny",
+          "Principal": {
+            "AWS": "arn:aws:iam::123456789012:user/jane.doe"
+          },
+          "Action": "ec2:RunInstances",
+          "Resource": "arn:aws:ec2:*:*:instance/*"
+        }
+      ]
+    }
