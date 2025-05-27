@@ -5,6 +5,7 @@
 - [ ] Ensure that staff are actively monitoring potential risks manually.
 - [ ] Do not deploy a solution to production until you're certain that no security risk exits.
 - [ ] decentralize privilege managment.
+
 **✅ Apply security at all layers of an architecture.** 
 
 
@@ -14,6 +15,8 @@
 - [ ] Customers are responsible for the installation, maintenance, and decommissioning of the hardware that they use in the AWS data center.
 - [ ] AWS is responsible for the configuration of security groups.
 - [ ] AWS is Responsible for the physical security of data center.
+
+
 **✅ Costomers are responsible for managing their user data.** 
 **✅ AWS is Responsible for the physical security of data center.**
 
@@ -24,6 +27,8 @@
 - [ ] Craft security policies that limit access to specific tasks.
 - [ ] Grant access only as needed. 
 - [ ] Monitor Actions and changes.
+
+
 **✅ Craft security policies that limit access to specific tasks.** 
 **✅ Grant access only as needed.**
 
@@ -42,6 +47,8 @@
 - [ ] Indivisuals, applications, and services can assume roles.
 - [ ] They provides permanent security credintials.
 - [ ] They are uniquely associated to an indivisual.
+
+
 **✅ Indivisuals, applications, and services can assume roles.** 
 **✅ They provide temporary security credintials.** 
 
@@ -57,6 +64,8 @@
 - [ ] It checks for explicit allow statements before it checks for explicit deny statement.
 - [ ] It checks for explict deny statement before it checks for explicit allow statements.
 - [ ] If the policy does not have any explicit deny statement or explicit allow statements users have access by default.
+
+
 **✅ It checks for explict deny statement before it checks for explicit allow statements.** 
 
 **Q8. Which statement  about AWS Identity and Access Managment (IAM) policies is accurate?**
@@ -72,6 +81,8 @@
 - [ ] Action
 - [ ] Condition
 - [ ] Principal
+
+
 **✅ Effect** 
 
 **Q10. Which option accurately describes the statement element in an AWS Identify and Access Managment (IAM) policy?**
@@ -79,6 +90,8 @@
 - [ ] The statement element does not apply to Identity-based policies.
 - [ ] The statement element is an optional part of an  IMA policy.
 - [ ] The statement elemet contains other elements that together define what is allowed or denied.
+
+
 **✅ The statement elemet contains other elements that together define what is allowed or denied.** 
 
 
